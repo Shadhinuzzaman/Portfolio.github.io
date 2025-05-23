@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Shadhinuzzaman - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #2c3e50; /* Darker blue-gray */
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 60%;
+            height: 4px;
+            background-color: #3498db; /* Blue accent */
+            border-radius: 2px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .skill-badge {
+            background-color: #e0f2f7; /* Light blue */
+            color: #2980b9; /* Darker blue */
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* rounded-full */
+            font-weight: 600;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            display: inline-block;
+        }
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 shadow-lg">
+        <nav class="container flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold rounded-lg px-3 py-1 hover:bg-blue-700 transition duration-300">
+                Md. Shadhinuzzaman
+            </a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-lg hover:underline hover:text-blue-200 transition duration-300">About</a></li>
+                <li><a href="#education" class="text-lg hover:underline hover:text-blue-200 transition duration-300">Education</a></li>
+                <li><a href="#skills" class="text-lg hover:underline hover:text-blue-200 transition duration-300">Skills</a></li>
+                <li><a href="#projects" class="text-lg hover:underline hover:text-blue-200 transition duration-300">Projects</a></li>
+                <li><a href="#contact" class="text-lg hover:underline hover:text-blue-200 transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-to-br from-blue-500 to-purple-600 text-white py-20 text-center shadow-inner">
+        <div class="container">
+            <img src="https://placehold.co/150x150/ffffff/000000?text=Your+Photo" alt="Md. Shadhinuzzaman" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-5xl font-extrabold mb-4 leading-tight">Hello, I'm Md. Shadhinuzzaman</h1>
+            <p class="text-2xl font-light mb-8">Industrial and Production Engineering Student at NITER</p>
+            <a href="#projects" class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-3 rounded-full text-xl font-semibold shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p class="text-lg leading-relaxed">
+                    I am Md. Shadhinuzzaman, currently pursuing my studies in Industrial and Production Engineering at the National Institute of Textile Engineering and Research (NITER). I have a strong passion for optimizing processes, improving efficiency, and applying engineering principles to real-world challenges. My academic journey has equipped me with a solid foundation in manufacturing processes, quality control, operations research, and supply chain management. I am eager to contribute my skills and knowledge to innovative projects and gain practical experience in the industry.
+                </p>
+                <p class="text-lg leading-relaxed mt-4">
+                    Outside of academics, I am keen on exploring new technologies and continuously learning. I believe in a hands-on approach to problem-solving and am always looking for opportunities to apply theoretical knowledge to practical scenarios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-16">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-2">National Institute of Textile Engineering and Research (NITER)</h3>
+                <p class="text-xl font-medium text-gray-700 mb-1">B.Sc. in Industrial and Production Engineering</p>
+                <p class="text-lg text-gray-600">Expected Graduation: [Your Graduation Year, e.g., 202X]</p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Relevant Coursework: Operations Research, Quality Management, Supply Chain Management, Manufacturing Processes, Ergonomics, Production Planning and Control.</li>
+                    <li>Key Projects/Achievements: [Mention any significant projects or achievements here, e.g., "Developed a lean manufacturing simulation model," "Participated in inter-university engineering competition"].</li>
+                </ul>
+            </div>
+            </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-4">Technical Skills</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-badge">Lean Manufacturing</span>
+                    <span class="skill-badge">Six Sigma</span>
+                    <span class="skill-badge">Quality Control</span>
+                    <span class="skill-badge">Operations Research</span>
+                    <span class="skill-badge">Supply Chain Management</span>
+                    <span class="skill-badge">AutoCAD</span>
+                    <span class="skill-badge">SolidWorks</span>
+                    <span class="skill-badge">MS Office (Excel, Word, PowerPoint)</span>
+                    <span class="skill-badge">Data Analysis</span>
+                    <span class="skill-badge">Process Optimization</span>
+                    </div>
+
+                <h3 class="text-2xl font-semibold text-blue-700 mt-8 mb-4">Soft Skills</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-badge">Problem-Solving</span>
+                    <span class="skill-badge">Teamwork</span>
+                    <span class="skill-badge">Communication</span>
+                    <span class="skill-badge">Leadership</span>
+                    <span class="skill-badge">Adaptability</span>
+                    <span class="skill-badge">Critical Thinking</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/e0f2f7/2980b9?text=Project+Image+1" alt="Project 1" class="project-image">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Project Title One: Process Improvement</h3>
+                        <p class="text-gray-700 mb-4">
+                            Description of your project. What was the problem? What was your role? What technologies/methods did you use? What was the outcome?
+                        </p>
+                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/e0f2f7/2980b9?text=Project+Image+2" alt="Project 2" class="project-image">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Project Title Two: Quality Analysis</h3>
+                        <p class="text-gray-700 mb-4">
+                            Description of your second project. Be specific about your contributions and the impact of your work.
+                        </p>
+                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/e0f2f7/2980b9?text=Project+Image+3" alt="Project 3" class="project-image">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Project Title Three: Supply Chain Simulation</h3>
+                        <p class="text-gray-700 mb-4">
+                            Description of your third project. Highlight any challenges faced and how you overcame them.
+                        </p>
+                        <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="card text-center">
+                <p class="text-lg mb-4">
+                    I'm always open to discussing new projects, collaborations, or opportunities. Feel free to reach out!
+                </p>
+                <div class="flex flex-col items-center space-y-4">
+                    <a href="mailto:your.email@example.com" class="bg-green-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-green-600 transition duration-300 transform hover:scale-105 shadow-md">
+                        Email Me: your.email@example.com
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-800 transition duration-300 transform hover:scale-105 shadow-md">
+                        Connect on LinkedIn
+                    </a>
+                    <a href="https://github.com/yourgithub" target="_blank" class="bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition duration-300 transform hover:scale-105 shadow-md">
+                        My GitHub Profile
+                    </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container">
+            <p>&copy; 2024 Md. Shadhinuzzaman. All rights reserved.</p>
+            <p class="mt-2 text-sm">Designed with ❤️ using HTML and Tailwind CSS.</p>
+        </div>
+    </footer>
+</body>
+</html>
